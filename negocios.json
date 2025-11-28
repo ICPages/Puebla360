@@ -8,6 +8,7 @@
     "horario": "Lunes a Viernes. 10:00 AM a 7:00 PM.<br>Sábados. 10:00 AM a 5:00 PM.",
     "whatsapp": "2221743997", "facebook": null, "instagram": null, "tiktok": null, "web": "https://www.eaglemotors.mx/",
     "facebook_text": null, "web_text": "eaglemotors.mx", "menu": null,
+    "carrucel1": null, "carrucel2": null, "carrucel3": null, "carrucel4": null, "carrucel5": null,
     "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.3987124920372!2d-98.20797842479647!3d19.002144582187317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfb8aa3fc54e7b%3A0x4adf86ccd3cc514f!2sEagleMotors%20Refacciones%20para%20motocicletas%2C%20Centro%20de%20Servicio%20autorizado%20Vento%20Mb%20Veloci%2C%20Distribuidor%20italika!5e0!3m2!1ses-419!2smx!4v1764333534242!5m2!1ses-419!2smx"
   },
   {
@@ -19,6 +20,7 @@
     "horario": "Todos los días. 2:00 PM a 11:00 PM.",
     "whatsapp": "222 538 8151", "facebook": null, "instagram": null, "tiktok": null, "web": null,
     "facebook_text": null, "web_text": null, "menu": "PinoSnackMenu.pdf",
+    "carrucel1": null, "carrucel2": null, "carrucel3": null, "carrucel4": null, "carrucel5": null,
     "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15092.646441466182!2d-98.21446268297885!3d18.968468807732005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfbf2e662fa941%3A0x2a8d4fa1c7f8056e!2sLos%20H%C3%A9roes%20de%20Puebla%2C%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1764341927005!5m2!1ses-419!2smx"
   },
   {
@@ -30,6 +32,7 @@
     "horario": "Lunes a Viernes. 11:00 AM a 7:00 PM.<br>Domingo. 12:00 PM a 4:00 PM.",
     "whatsapp": "222 538 8151", "facebook": null, "instagram": null, "tiktok": null, "web": null,
     "facebook_text": null, "web_text": null, "menu": null,
+    "carrucel1": null, "carrucel2": null, "carrucel3": null, "carrucel4": null, "carrucel5": null,
     "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1886.6043836632894!2d-98.2147189903202!3d18.96638531925162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfbf2e8d9c1c6d%3A0x27173864ccc8f232!2sDiag.%2018%20A%20Sur%2012104%2C%20Los%20H%C3%A9roes%20de%20Puebla%2C%2072590%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1764334423509!5m2!1ses-419!2smx"
   },
 
@@ -41,7 +44,7 @@
 
 
 
-  
+
   {
     "id": 98,
     "firebaseId": "Ejemplo1", "imagen": "PizzeriaLaSierra.png", "nombre": "Pizzería La Sierra", "categoria": "Restaurantes y comida", "descorta": "En Pizzería La Sierra encontrarás el sabor cálido y rústico de la tradición.",
@@ -50,6 +53,7 @@
     "horario": "Martes a Jueves. 12:00 PM a 9:00 PM.<br>Viernes a Domingo. 11:00 AM a 10:00 PM.",
     "whatsapp": "012 345 6789", "facebook": "google.com", "instagram": "@p.lasierra", "tiktok": "@lasierra.tt", "web": "google.com",
     "facebook_text": "Pizzería La Sierra", "web_text": "plasierra.mx", "menu": "PizzeriaLaSierraMenu.pdf",
+    "carrucel1": "LaSierra1.png", "carrucel2": "LaSierra2.png", "carrucel3": "LaSierra3.png", "carrucel4": null, "carrucel5": null,
     "mapa": null
   },
   {
@@ -60,6 +64,7 @@
     "horario": "Martes a Viernes. 11:00 AM a 7:00 PM.<br>Sábado. 12:00 PM a 6:00 PM.",
     "whatsapp": "987 654 3210", "facebook": "google.com", "instagram": "@estetica.gdv", "tiktok": "@gretadelvalle.tt", "web": "google.com",
     "facebook_text": "Estética Greta Del Valle", "web_text": "gretadelvalle.mx", "menu": null,
+    "carrucel1": null, "carrucel2": null, "carrucel3": null, "carrucel4": null, "carrucel5": null,
     "mapa": null
   }
 ]
