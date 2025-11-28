@@ -1,0 +1,65 @@
+[
+  {
+    "id": 3,
+    "firebaseId": null, "imagen": "EagleMotors.png", "nombre": "Eagle Motors", "categoria": "Automotriz",
+    "descorta": "Distribucion de refacciones y accesorios para motos comerciales; además somos centro de servicio autorizado de Vento, MB y Veloci.",
+    "estrellas": null, "domicilio": true, "local": true, "tarjtransf": true, "24hrs": false, "pagina": "Basic.html",
+    "deslarga": "Nos dedicamos a distribuir refacciones y accesorios para motos comerciales, además somos centro de servicio autorizado de Vento, MB y Veloci. Nuestra especialidad es dar el sercivio a flotillas, tambien hacemos envíos a toda la República Mexicana por Mercado Libre.",
+    "horario": "Lunes a Viernes. 10:00 AM a 7:00 PM.<br>Sábados. 10:00 AM a 5:00 PM.",
+    "whatsapp": "2221743997", "facebook": null, "instagram": null, "tiktok": null, "web": "https://www.eaglemotors.mx/",
+    "facebook_text": null, "web_text": "eaglemotors.mx", "menu": null,
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.3987124920372!2d-98.20797842479647!3d19.002144582187317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfb8aa3fc54e7b%3A0x4adf86ccd3cc514f!2sEagleMotors%20Refacciones%20para%20motocicletas%2C%20Centro%20de%20Servicio%20autorizado%20Vento%20Mb%20Veloci%2C%20Distribuidor%20italika!5e0!3m2!1ses-419!2smx!4v1764333534242!5m2!1ses-419!2smx"
+  },
+  {
+    "id": 4,
+    "firebaseId": null, "imagen": "PinoSnack.png", "nombre": "Pino Snack", "categoria": "Restaurantes y comida",
+    "descorta": "Pino Snack: hamburguesas, alitas y bebidas deliciosas que te hacen volver por más.",
+    "estrellas": null, "domicilio": true, "local": false, "tarjtransf": true, "24hrs": false, "pagina": "Basic.html",
+    "deslarga": "En PinoSnack encontrarás el lugar perfecto para disfrutar de comida rápida hecha con sabor y calidad. Desde nuestras jugosas hamburguesas hasta las alitas más crujientes, acompañadas de bebidas refrescantes, cada bocado está pensado para ofrecerte una experiencia deliciosa. Ideal para compartir con amigos, disfrutar en familia o darte un gusto en cualquier momento del día.",
+    "horario": "Todos los días. 2:00 PM a 11:00 PM.",
+    "whatsapp": "222 538 8151", "facebook": null, "instagram": null, "tiktok": null, "web": null,
+    "facebook_text": null, "web_text": null, "menu": "PinoSnackMenu.pdf",
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15092.646441466182!2d-98.21446268297885!3d18.968468807732005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfbf2e662fa941%3A0x2a8d4fa1c7f8056e!2sLos%20H%C3%A9roes%20de%20Puebla%2C%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1764341927005!5m2!1ses-419!2smx"
+  },
+  {
+    "id": 5,
+    "firebaseId": null, "imagen": "LBKarly.png", "nombre": "Karly Troncoso Lady Barber", "categoria": "Barberías y estéticas",
+    "descorta": "Karly Troncoso Lady Barber: estilo, precisión y cuidado en cada corte.",
+    "estrellas": null, "domicilio": false, "local": true, "tarjtransf": true, "24hrs": false, "pagina": "Basic.html",
+    "deslarga": "Karly Troncoso Lady Barber combina profesionalismo y pasión por la barbería para ofrecer cortes de cabello, estilizados y arreglos de barba que resaltan tu personalidad. Con un trato cercano y atención al detalle, cada visita es una experiencia de estilo única, pensada para que te sientas seguro, moderno y auténtico.",
+    "horario": "Lunes a Viernes. 11:00 AM a 7:00 PM.<br>Domingo. 12:00 PM a 4:00 PM.",
+    "whatsapp": "222 538 8151", "facebook": null, "instagram": null, "tiktok": null, "web": null,
+    "facebook_text": null, "web_text": null, "menu": null,
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1886.6043836632894!2d-98.2147189903202!3d18.96638531925162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfbf2e8d9c1c6d%3A0x27173864ccc8f232!2sDiag.%2018%20A%20Sur%2012104%2C%20Los%20H%C3%A9roes%20de%20Puebla%2C%2072590%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1764334423509!5m2!1ses-419!2smx"
+  },
+
+
+
+
+
+
+
+
+
+  
+  {
+    "id": 98,
+    "firebaseId": "Ejemplo1", "imagen": "PizzeriaLaSierra.png", "nombre": "Pizzería La Sierra", "categoria": "Restaurantes y comida", "descorta": "En Pizzería La Sierra encontrarás el sabor cálido y rústico de la tradición.",
+    "estrellas": null, "domicilio": true, "local": true, "tarjtransf": true, "24hrs": false, "pagina": "Premium.html",
+    "deslarga": "En Pizzería La Sierra cocinamos con cariño. Nuestro menú ofrece pizzas deliciosas, preparadas con masa fresca y recetas familiares que han pasado de generación en generación. Un lugar para compartir y disfrutar.",
+    "horario": "Martes a Jueves. 12:00 PM a 9:00 PM.<br>Viernes a Domingo. 11:00 AM a 10:00 PM.",
+    "whatsapp": "012 345 6789", "facebook": "google.com", "instagram": "@p.lasierra", "tiktok": "@lasierra.tt", "web": "google.com",
+    "facebook_text": "Pizzería La Sierra", "web_text": "plasierra.mx", "menu": "PizzeriaLaSierraMenu.pdf",
+    "mapa": null
+  },
+  {
+    "id": 99,
+    "firebaseId": "Ejemplo2", "imagen": "EsteticaGDV.png", "nombre": "Estética Greta Del Valle", "categoria": "Barberías y estéticas", "descorta": "Tratamientos de belleza y cuidado personal con un enfoque profesional y cercano.",
+    "estrellas": null, "domicilio": false, "local": true, "tarjtransf": true, "24hrs": false, "pagina": "Premium.html",
+    "deslarga": "Nos apasiona resaltar tu belleza natural y cuidar tu bienestar integral. Ofrecemos una amplia gama de tratamientos faciales y corporales, depilación, masajes, cuidado de la piel y asesoría personalizada para cada cliente.",
+    "horario": "Martes a Viernes. 11:00 AM a 7:00 PM.<br>Sábado. 12:00 PM a 6:00 PM.",
+    "whatsapp": "987 654 3210", "facebook": "google.com", "instagram": "@estetica.gdv", "tiktok": "@gretadelvalle.tt", "web": "google.com",
+    "facebook_text": "Estética Greta Del Valle", "web_text": "gretadelvalle.mx", "menu": null,
+    "mapa": null
+  }
+]

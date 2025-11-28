@@ -1,0 +1,225 @@
+/* ======================================================
+   VARIABLES DE COLOR — MODIFICA AQUÍ TODA LA PALETA
+====================================================== */
+:root {
+    /* NAVBAR */
+    --navbar-bg: #1e3a8a;
+    --navbar-text: #ffffff;
+
+    /* HEADER */
+    --hero-text: #1e3a8a;
+
+    /* BODY */
+    --body-bg: #f3f4f6;
+
+    /* TARJETAS */
+    --card-bg: #ffffff;
+    --card-text: #1e3a8a;
+
+    /* FOOTER */
+    --footer-bg: #1e3a8a;
+    --footer-text: #ffffff;
+
+    /* OTROS */
+    --accent-color: #ffca28;
+    --card-shadow: #60a5fa;
+}
+
+/* ======================================================
+   FUENTE PRINCIPAL
+====================================================== */
+.science-gothic {
+    font-family: "Science Gothic", sans-serif;
+    font-weight: 700;
+}
+
+/* ======================================================
+   BODY
+====================================================== */
+body {
+    background: var(--body-bg);
+    color: var(--card-text);
+    padding-top: 70px;
+}
+
+/* ======================================================
+   NAVBAR
+====================================================== */
+.navbar {
+    background-color: var(--navbar-bg) !important;
+}
+
+.navbar-brand,
+.navbar a {
+    color: var(--navbar-text) !important;
+}
+
+/* ======================================================
+   HEADER (HERO)
+====================================================== */
+.hero-header {
+    background: linear-gradient(45deg, #f3f4f6, #60a5fa, #3b82f6, #1e3a8a);
+    background-size: 400% 400%;
+    animation: heroGradient 12s ease infinite;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.hero-header h1, .hero-header h2, .hero-header p, .hero-header span, .hero-header .science-gothic {
+    animation: textColor 12s ease infinite;
+}
+
+@keyframes heroGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes textColor {
+    25% { color: #f3f4f6; }
+    50% { color: #60a5fa; }
+    75% { color: #3b82f6; }
+    100% { color: #1e3a8a; }
+}
+
+/* ======================================================
+   FILTRO
+====================================================== */
+#buscador .row {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#buscador .col-md-3 {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+#buscador select,
+#buscador input {
+    min-width: 180px;
+}
+
+@media (max-width: 768px) {
+
+    #buscador .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #buscador .col-md-3 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #buscador select,
+    #buscador input,
+    #buscador button {
+        width: 100%;
+    }
+}
+
+/* ======================================================
+   TARJETAS DEL DIRECTORIO
+====================================================== */
+.business-card {
+    background: var(--card-bg);
+    color: var(--card-text);
+    transition: transform .25s ease, box-shadow .25s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.business-card:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 14px 30px #60a5fa;
+}
+
+.premium-card {
+    border: 3px solid var(--accent-color);
+}
+
+/* ======================================================
+   PAGINACIÓN
+====================================================== */
+.page-item.active .page-link {
+    background-color: var(--navbar-bg);
+    border-color: var(--navbar-bg);
+    color: white;
+}
+
+/* ======================================================
+   CALIFICACIÓN
+====================================================== */
+.star-rating .star {
+    cursor: pointer;
+    font-size: 28px;
+    user-select: none;
+    display: inline-block;
+    padding: 3px;
+}
+
+/* ======================================================
+   CAROUSEL
+====================================================== */
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* ======================================================
+   BOTONES
+====================================================== */
+.btn-primary-color {
+    background-color: var(--navbar-bg);
+    color: var(--navbar-text);
+    border-radius: 8px;
+}
+
+/* ======================================================
+   ENLACES
+====================================================== */
+.redes a {
+    color: #1e3a8a;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.descargarmenu {
+    color: #1e3a8a;
+    text-decoration: none;
+}
+
+.descargarmenu:hover {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+/* ======================================================
+   FOOTER
+====================================================== */
+.custom-footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+}
+
+.custom-footer a {
+    color: var(--footer-text);
+    text-decoration: none;
+}
+
+.custom-footer a:hover {
+    color: #60a5fa;
+    text-decoration: none;
+}

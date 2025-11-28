@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title id="titulo"></title>
+  <link rel="icon" type="image/png" href="Puebla360.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold science-gothic" href="index.html">Puebla 360</a>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main class="container">
+  <h2 class="fw-bold" id="nombre"></h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <img id="imagen" class="img-fluid rounded shadow" alt="Logo">
+      <p></p>
+      <h5 class="fw-bold">Contacto:</h5>
+      <p id="contacto" class="redes"></p>
+      <h5 class="fw-bold">Horario</h5>
+      <p id="horario"></p>
+      <p><a href="#" id="menu" download class="descargarmenu"><i class="bi bi-download"></i> Descargar Menú</a></p>
+      <h5 class="fw-bold">Calificación:</h5>
+      <div id="rating" class="star-rating">
+        <span class="star" data-value="1">☆</span>
+        <span class="star" data-value="2">☆</span>
+        <span class="star" data-value="3">☆</span>
+        <span class="star" data-value="4">☆</span>
+        <span class="star" data-value="5">☆</span>
+        <span id="rating-value">(0.0)</span>
+      </div>
+      <p></p>
+    </div>
+    <div class="col-md-8">
+      <p id="deslarga"></p>
+      <h5 class="fw-bold">Galería</h5>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Premium1.png" class="d-block w-100 rounded" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="Premium2.png" class="d-block w-100 rounded" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="Premium3.png" class="d-block w-100 rounded" alt="">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      <div class="mt-4">
+        <h5 class="fw-bold">Ubicación</h5>
+        <iframe id="mapa" src="https://maps.google.com/maps?q=Puebla&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%" height="250" class="rounded border"></iframe>
+      </div>
+      <p></p>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="custom-footer py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 mb-3 text-center">
+        <img src="Puebla360.png" alt="Puebla 360" class="img-fluid" style="max-height: 120px;">
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5 class="science-gothic">Puebla 360</h5>
+        <p>Directorio local de negocios y servicios en Puebla de Zaragoza, Puebla.</p>
+      </div>
+      <div class="col-md-3 mb-3">
+        <h6>Enlaces</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobrePuebla360.html">Sobre Puebla 360</a></li>
+          <li><a href="https://es.wikipedia.org/wiki/Puebla_de_Zaragoza" target="_blank">Sobre Puebla de Zaragoza</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 mb-3">
+        <h6>Contacto</h6>
+        <p class="m-0"><a href="https://www.facebook.com/profile.php?id=61584078221816" target="_blank"><i class="bi bi-facebook"></i> Facebook</a></p>
+        <p class="m-0"><a href="https://wa.me/522221106016?text=%C2%A1Hola%20*Puebla%20360*%21%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%3A"
+                         target="_blank"><i class="bi bi-whatsapp"></i> WhatsApp</a></p>
+      </div>
+    </div>
+    <div class="text-center mt-3">© 2026 Puebla 360. Página desarrollada por IC Pages.</div>
+  </div>
+</footer>
+
+<!-- ⭐⭐⭐ FIREBASE + RATING ⭐⭐⭐ -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+import { getFirestore, doc, getDoc, runTransaction } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
+const firebaseConfig = {
+  apiKey: "AIzaSyD579Z21DvWp9jabiNewT22O-Sk_8G_sQY",
+  authDomain: "atoyac360.firebaseapp.com",
+  projectId: "atoyac360",
+  storageBucket: "atoyac360.firebasestorage.app",
+  messagingSenderId: "1004338612408",
+  appId: "1:1004338612408:web:bbe17ed5b57e66d2194c4d",
+  measurementId: "G-0T4X5N476S"
+};
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+// ⭐ Función que inicia rating cuando ya conocemos el firebaseId
+async function iniciarRating(firebaseId) {
+    const stars = document.querySelectorAll("#rating .star");
+    const ratingValue = document.getElementById("rating-value");
+    let currentRating = 0;
+    const docRef = doc(db, "calificaciones", firebaseId);
+    function highlightStars(rating) {
+      stars.forEach(star => {
+        star.textContent = parseInt(star.dataset.value) <= Math.round(rating) ? '★' : '☆';
+      });
+    }
+    // Obtener calificación desde Firebase
+    const snap = await getDoc(docRef);
+    if (snap.exists()) {
+        const data = snap.data();
+        currentRating = data.promedio || 0;
+    }
+    ratingValue.textContent = `(${currentRating.toFixed(1)})`;
+    highlightStars(currentRating);
+    // Click en estrellas
+    stars.forEach(star => {
+      star.addEventListener("mouseover", () => highlightStars(parseInt(star.dataset.value)));
+      star.addEventListener("mouseout", () => highlightStars(currentRating));
+      star.addEventListener("click", async () => {
+        const rating = parseInt(star.dataset.value);
+        try {
+          await runTransaction(db, async (t) => {
+            const s = await t.get(docRef);
+            if (!s.exists()) {
+              t.set(docRef, { promedio: rating, votos: 1 });
+            } else {
+              const data = s.data();
+              const votos = data.votos || 0;
+              const promedio = data.promedio || 0;
+              const nuevoPromedio = ((promedio * votos) + rating) / (votos + 1);
+              t.update(docRef, { promedio: nuevoPromedio, votos: votos + 1 });
+            }
+          });
+          currentRating = rating;
+          ratingValue.textContent = `(${currentRating.toFixed(1)})`;
+          highlightStars(currentRating);
+        } catch (e) {
+          console.error("Error al actualizar calificación:", e);
+        }
+      });
+    });
+}
+window.iniciarRating = iniciarRating;
+</script>
+
+<!-- ⭐⭐⭐ CARGAR NEGOCIO DESDE JSON ⭐⭐⭐ -->
+<script>
+async function cargarNegocio() {
+  const params = new URLSearchParams(window.location.search);
+  const id = parseInt(params.get("id"));
+  if (!id) return;
+  const resp = await fetch("negocios.json");
+  const negocios = await resp.json();
+  const negocio = negocios.find(n => n.id === id);
+  if (!negocio) return;
+  // Título y nombre
+  document.getElementById("titulo").textContent = negocio.nombre;
+  document.getElementById("nombre").textContent = negocio.nombre;
+  // Descripción
+  document.getElementById("deslarga").innerHTML = negocio.deslarga ?? negocio.descripcion;
+  // Imagen
+  document.getElementById("imagen").src = negocio.imagen;
+  // Contacto
+  let contactoHTML = "";
+  // WhatsApp
+  if (negocio.whatsapp) {
+  const wa = negocio.whatsapp.replace(/\s+/g, "");
+  contactoHTML += `<a href="https://wa.me/${wa}" target="_blank"><i class="bi bi-whatsapp"></i> ${negocio.whatsapp}</a><br>`;}
+  // Facebook
+  if (negocio.facebook) {
+  contactoHTML += `<a href="https://facebook.com/${negocio.facebook}" target="_blank"><i class="bi bi-facebook"></i> ${negocio.facebook_text ?? "Facebook"}</a><br>`;}
+  // Instagram
+  if (negocio.instagram) {
+  const ig = negocio.instagram.replace("@", "");
+  contactoHTML += `<a href="https://instagram.com/${ig}" target="_blank"><i class="bi bi-instagram"></i> ${negocio.instagram}</a><br>`;}
+  // TikTok
+  if (negocio.tiktok) {
+  const tk = negocio.tiktok.replace("@", "");
+  contactoHTML += `<a href="https://www.tiktok.com/@${tk}" target="_blank"><i class="bi bi-tiktok"></i> ${negocio.tiktok}</a><br>`;}
+  // Web
+  if (negocio.web) {
+  const webTexto = negocio.web_text ?? "Sitio web";
+  contactoHTML += `<a href="${negocio.web}" target="_blank"><i class="bi bi-globe"></i> ${webTexto}</a><br>`;}
+  document.getElementById("contacto").innerHTML = contactoHTML;
+  // Horario
+  if (negocio.horario) {
+    document.getElementById("horario").innerHTML = negocio.horario;
+  }
+  // Menú
+  const menu = document.getElementById("menu");
+  if (negocio.menu) {
+  menu.href = negocio.menu;
+  menu.setAttribute("download", negocio.menu);
+  menu.style.display = "inline-block";
+  } else {
+    menu.style.display = "none";
+    }
+  // Mapa
+  if (negocio.mapa && negocio.mapa.trim() !== "") {
+    document.getElementById("mapa").src = negocio.mapa;
+  }
+  // ⭐⭐⭐ Iniciar rating usando firebaseId ⭐⭐⭐
+  if (negocio.firebaseId) {
+    iniciarRating(negocio.firebaseId);
+  }
+}
+cargarNegocio();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
