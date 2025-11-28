@@ -46,30 +46,20 @@
     </div>
     <div class="col-md-8">
       <p id="deslarga"></p>
-      <h5 class="fw-bold">Galería</h5>
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Premium1.png" class="d-block w-100 rounded" alt="">
-            </div>
-            <div class="carousel-item">
-              <img src="Premium2.png" class="d-block w-100 rounded" alt="">
-            </div>
-            <div class="carousel-item">
-              <img src="Premium3.png" class="d-block w-100 rounded" alt="">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <h5 class="fw-bold">Galería</h5>
+        <div class="carousel-inner" id="carousel-content"></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
       <div class="mt-4">
         <h5 class="fw-bold">Ubicación</h5>
-        <iframe id="mapa" src="https://maps.google.com/maps?q=Puebla&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                width="100%" height="250" class="rounded border"></iframe>
+        <iframe id="mapa" src="https://maps.google.com/maps?q=Puebla&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%"
+          height="250" class="rounded border"></iframe>
       </div>
       <p></p>
     </div>
@@ -220,9 +210,18 @@ async function cargarNegocio() {
   menu.href = negocio.menu;
   menu.setAttribute("download", negocio.menu);
   menu.style.display = "inline-block";
-  } else {
-    menu.style.display = "none";
-    }
+  } else {menu.style.display = "none";}
+  // Carrusel
+  const carousel = document.getElementById("carousel-content");
+  if (carousel) {
+    carousel.innerHTML = ""; const imagenesCarrusel = [
+      negocio.carrucel1, negocio.carrucel2, negocio.carrucel3, negocio.carrucel4, negocio.carrucel5
+    ].filter(img => img && img !== "null" && img.trim() !== "");
+    if (imagenesCarrusel.length === 0) {document.getElementById("carouselExample").style.display = "none";
+    } else {
+      document.getElementById("carouselExample").style.display = "block";
+      imagenesCarrusel.forEach((img, index) => {carousel.innerHTML += `<div class="carousel-item 
+      ${index === 0 ? "active" : ""}"><img src="${img}" class="d-block w-100 rounded" alt=""></div>`;});}}
   // Mapa
   if (negocio.mapa && negocio.mapa.trim() !== "") {
     document.getElementById("mapa").src = negocio.mapa;
