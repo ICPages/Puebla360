@@ -1,7 +1,7 @@
 [
   {
     "id": 3,
-    "firebaseId": null, "imagen": "EagleMotors.png", "nombre": "Eagle Motors", "categoria": "Automotriz",
+    "firebaseId": null, "imagen": "EagleMotors.png", "nombre": "Eagle Motors", "categoria": "Refaccionarias y talleres",
     "descorta": "Distribucion de refacciones y accesorios para motos comerciales; además somos centro de servicio autorizado de Vento, MB y Veloci.",
     "estrellas": null, "domicilio": true, "local": true, "tarjtransf": true, "24hrs": false, "pagina": "Basic.html",
     "deslarga": "Nos dedicamos a distribuir refacciones y accesorios para motos comerciales, además somos centro de servicio autorizado de Vento, MB y Veloci. Nuestra especialidad es dar el sercivio a flotillas, tambien hacemos envíos a toda la República Mexicana por Mercado Libre.",
@@ -13,7 +13,7 @@
   },
   {
     "id": 4,
-    "firebaseId": null, "imagen": "PinoSnack.png", "nombre": "Pino Snack", "categoria": "Restaurantes y comida",
+    "firebaseId": null, "imagen": "PinoSnack.png", "nombre": "Pino Snack", "categoria": "Alimentos y bebidas",
     "descorta": "Pino Snack: hamburguesas, alitas y bebidas deliciosas que te hacen volver por más.",
     "estrellas": null, "domicilio": true, "local": false, "tarjtransf": true, "24hrs": false, "pagina": "Basic.html",
     "deslarga": "En PinoSnack encontrarás el lugar perfecto para disfrutar de comida rápida hecha con sabor y calidad. Desde nuestras jugosas hamburguesas hasta las alitas más crujientes, acompañadas de bebidas refrescantes, cada bocado está pensado para ofrecerte una experiencia deliciosa. Ideal para compartir con amigos, disfrutar en familia o darte un gusto en cualquier momento del día.",
@@ -25,7 +25,7 @@
   },
   {
     "id": 5,
-    "firebaseId": null, "imagen": "LBKarly.png", "nombre": "Karly Troncoso Lady Barber", "categoria": "Barberías y estéticas",
+    "firebaseId": null, "imagen": "LBKarly.png", "nombre": "Karly Troncoso Lady Barber", "categoria": "Barberías y salones de belleza",
     "descorta": "Karly Troncoso Lady Barber: estilo, precisión y cuidado en cada corte.",
     "estrellas": null, "domicilio": false, "local": true, "tarjtransf": true, "24hrs": false, "pagina": "Basic.html",
     "deslarga": "Karly Troncoso Lady Barber combina profesionalismo y pasión por la barbería para ofrecer cortes de cabello, estilizados y arreglos de barba que resaltan tu personalidad. Con un trato cercano y atención al detalle, cada visita es una experiencia de estilo única, pensada para que te sientas seguro, moderno y auténtico.",
@@ -47,7 +47,7 @@
 
   {
     "id": 98,
-    "firebaseId": "Ejemplo1", "imagen": "PizzeriaLaSierra.png", "nombre": "Pizzería La Sierra", "categoria": "Restaurantes y comida", "descorta": "En Pizzería La Sierra encontrarás el sabor cálido y rústico de la tradición.",
+    "firebaseId": "Ejemplo1", "imagen": "PizzeriaLaSierra.png", "nombre": "Pizzería La Sierra", "categoria": "Alimentos y bebidas", "descorta": "En Pizzería La Sierra encontrarás el sabor cálido y rústico de la tradición.",
     "estrellas": null, "domicilio": true, "local": true, "tarjtransf": true, "24hrs": false, "pagina": "Premium.html",
     "deslarga": "En Pizzería La Sierra cocinamos con cariño. Nuestro menú ofrece pizzas deliciosas, preparadas con masa fresca y recetas familiares que han pasado de generación en generación. Un lugar para compartir y disfrutar.",
     "horario": "Martes a Jueves. 12:00 PM a 9:00 PM.<br>Viernes a Domingo. 11:00 AM a 10:00 PM.",
@@ -58,7 +58,7 @@
   },
   {
     "id": 99,
-    "firebaseId": "Ejemplo2", "imagen": "EsteticaGDV.png", "nombre": "Estética Greta Del Valle", "categoria": "Barberías y estéticas", "descorta": "Tratamientos de belleza y cuidado personal con un enfoque profesional y cercano.",
+    "firebaseId": "Ejemplo2", "imagen": "EsteticaGDV.png", "nombre": "Estética Greta Del Valle", "categoria": "Barberías y salones de belleza", "descorta": "Tratamientos de belleza y cuidado personal con un enfoque profesional y cercano.",
     "estrellas": null, "domicilio": false, "local": true, "tarjtransf": true, "24hrs": false, "pagina": "Premium.html",
     "deslarga": "Nos apasiona resaltar tu belleza natural y cuidar tu bienestar integral. Ofrecemos una amplia gama de tratamientos faciales y corporales, depilación, masajes, cuidado de la piel y asesoría personalizada para cada cliente.",
     "horario": "Martes a Viernes. 11:00 AM a 7:00 PM.<br>Sábado. 12:00 PM a 6:00 PM.",
